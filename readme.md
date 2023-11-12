@@ -1,13 +1,5 @@
 # Alpakka Firmware
 
-#After cloning this repository change folder name from alpakka_pf_firmware to alpakka_firmware
-
-#then follow install instructions from https://inputlabs.io/alpakka/manual/dev_unix or https://inputlabs.io/alpakka/manual/dev_windows
-
-#if "make load" stops at "Waiting for Pico in Bootsel mode / RPI-RP2 drive" then it might be trying to install the uf2 file into /media/RPI-RP2 instead of /media/(whatever your user is)/RPI-RP2. What helped me is going to /alpakka_firmware/build in the file explorer and dragging the alpakka.uf2 file directly into the RPI-RP2 drive.
-
-#When the controller restarts enter fps_fusion profile to play roblox.
-
 *Alpakka controller reference firmware (for Raspberry Pi Pico)*
 ## Project links
 - [Alpakka Manual](https://inputlabs.io/devices/alpakka/manual).
@@ -49,3 +41,13 @@ While having an active session:
 - Double press: Put the controller in bootsel mode.
 
 Read the [Alpakka developer manual](https://inputlabs.io/devices/alpakka/manual/dev) for details about the **devkit** and more.
+
+##Troubleshooting
+
+After cloning this repository change folder name from alpakka_pf_firmware to alpakka_firmware
+
+Then follow install instructions from https://inputlabs.io/alpakka/manual/dev_unix or https://inputlabs.io/alpakka/manual/dev_windows
+
+If "make load" stops at "Waiting for Pico in Bootsel mode / RPI-RP2 drive" then it might be trying to install the uf2 file into /media/RPI-RP2 instead of /media/(whatever your user is)/RPI-RP2. What helped me is going to /alpakka_firmware/build in the file explorer and dragging the alpakka.uf2 file directly into the RPI-RP2 drive.
+
+When the controller restarts enter fps_fusion profile to play Phantom Forces.
