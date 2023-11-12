@@ -15,43 +15,43 @@ Profile profile_init_fps_fusion() {
     profile.select_2 = Button_(PIN_SELECT_2, NORMAL, ACTIONS(KEY_M));
     profile.start_2 =  Button_(PIN_START_2,  NORMAL, ACTIONS(KEY_N));
 
-    profile.dpad_left =  Button_(PIN_DPAD_LEFT,  NORMAL, ACTIONS(KEY_LEFT));
-    profile.dpad_right = Button_(PIN_DPAD_RIGHT, NORMAL, ACTIONS(KEY_RIGHT));
-    profile.dpad_up =    Button_(PIN_DPAD_UP,    NORMAL, ACTIONS(KEY_UP));
-    profile.dpad_down =  Button_(PIN_DPAD_DOWN,  NORMAL, ACTIONS(KEY_DOWN));
+    profile.dpad_left =  Button_(PIN_DPAD_LEFT,  NORMAL, ACTIONS(KEY_B));
+    profile.dpad_right = Button_(PIN_DPAD_RIGHT, NORMAL, ACTIONS(KEY_V));
+    profile.dpad_up =    Button_(PIN_DPAD_UP,    NORMAL, ACTIONS(KEY_1));
+    profile.dpad_down =  Button_(PIN_DPAD_DOWN,  NORMAL, ACTIONS(KEY_2));
 
-    profile.a = Button_(PIN_A, NORMAL, ACTIONS(KEY_F));
-    profile.b = Button_(PIN_B, NORMAL, ACTIONS(KEY_V));
+    profile.a = Button_(PIN_A, NORMAL, ACTIONS(KEY_SPACE));
+    profile.b = Button_(PIN_B, NORMAL, ACTIONS(KEY_X));
     profile.x = Button_(PIN_X, NORMAL, ACTIONS(KEY_R));
     profile.y = Button_(PIN_Y, NORMAL, ACTIONS(KEY_T));
 
-    profile.l1 = Button_(PIN_L1, NORMAL, ACTIONS(KEY_Q));
-    profile.r1 = Button_(PIN_R1, NORMAL, ACTIONS(KEY_E));
+    profile.l1 = Button_(PIN_L1, NORMAL, ACTIONS(KEY_E));
+    profile.r1 = Button_(PIN_R1, NORMAL, ACTIONS(KEY_G));
     profile.l2 = Button_(PIN_L2, NORMAL, ACTIONS(MOUSE_2));
     profile.r2 = Button_(PIN_R2, NORMAL, ACTIONS(MOUSE_1));
-    profile.l4 = Button_(PIN_L4, NORMAL, ACTIONS(KEY_SPACE));
+    profile.l4 = Button_(PIN_L4, NORMAL, ACTIONS(KEY_F));
     profile.r4 = Button_(PIN_R4, HOLD_OVERLAP, ACTIONS(KEY_LEFT_CONTROL), ACTIONS(KEY_P));
 
     profile.rotary = Rotary_(NULL, ACTIONS(MOUSE_SCROLL_UP), ACTIONS(MOUSE_SCROLL_DOWN));
 
     profile.thumbstick = Thumbstick_(
-        THUMBSTICK_MODE_4DIR,                                        // Mode.
-        DEADZONE_FROM_CONFIG,                                        // Deadzone.
-        0.5,                                                         // Overlap.
-        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(GAMEPAD_AXIS_LX_NEG)),  // Left.
-        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(GAMEPAD_AXIS_LX)),      // Right.
-        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(GAMEPAD_AXIS_LY_NEG)),  // Up.
-        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(GAMEPAD_AXIS_LY)),      // Down.
-        Button_(PIN_L3,      NORMAL, ACTIONS(KEY_LEFT_SHIFT)),       // Push.
-        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_LEFT_BRACKET)),     // Inner.
-        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_RIGHT_BRACKET))     // Outer.
+        THUMBSTICK_MODE_4DIR,                                     // Mode.
+        DEADZONE_FROM_CONFIG,                                     // Deadzone.
+        0.5,                                                      // Overlap.
+        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_A)),             // Left.
+        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_D)),             // Right.
+        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_W)),             // Up.
+        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_S)),             // Down.
+        Button_(PIN_L3,      NORMAL, ACTIONS(KEY_LEFT_SHIFT)),    // Push.
+        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_LEFT_BRACKET)),  // Inner.
+        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_RIGHT_BRACKET))  // Outer.
     );
 
     profile.dhat = Dhat_(
         Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_1)),  // Left.
         Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_3)),  // Right.
         Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_4)),  // Up.
-        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_2)),  // Down.
+        Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_Z)),  // Down.
         Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_8)),  // ↖
         Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_7)),  // ↗
         Button_(PIN_VIRTUAL, NORMAL, ACTIONS(KEY_5)),  // ↙
