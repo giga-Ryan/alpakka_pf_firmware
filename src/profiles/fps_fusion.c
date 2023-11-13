@@ -18,18 +18,18 @@ Profile profile_init_fps_fusion() {
     profile.dpad_left =  Button_(PIN_DPAD_LEFT,  NORMAL, ACTIONS(KEY_B));
     profile.dpad_right = Button_(PIN_DPAD_RIGHT, NORMAL, ACTIONS(KEY_V));
     profile.dpad_up =    Button_(PIN_DPAD_UP,    NORMAL, ACTIONS(KEY_1));
-    profile.dpad_down =  Button_(PIN_DPAD_DOWN,  NORMAL, ACTIONS(KEY_2));
+    profile.dpad_down =  Button_(PIN_DPAD_DOWN,  NORMAL, ACTIONS(KEY_T));
 
     profile.a = Button_(PIN_A, NORMAL, ACTIONS(KEY_SPACE));
     profile.b = Button_(PIN_B, NORMAL, ACTIONS(KEY_LEFT_CONTROL));
     profile.x = Button_(PIN_X, NORMAL, ACTIONS(KEY_R));
-    profile.y = Button_(PIN_Y, NORMAL, ACTIONS(KEY_T));
+    profile.y = Button_(PIN_Y, NORMAL, ACTIONS(KEY_F));
 
     profile.l1 = Button_(PIN_L1, NORMAL, ACTIONS(KEY_E));
     profile.r1 = Button_(PIN_R1, NORMAL, ACTIONS(KEY_G));
     profile.l2 = Button_(PIN_L2, NORMAL, ACTIONS(MOUSE_2));
     profile.r2 = Button_(PIN_R2, NORMAL, ACTIONS(MOUSE_1));
-    profile.l4 = Button_(PIN_L4, NORMAL, ACTIONS(KEY_F));
+    profile.l4 = Button_(PIN_L4, NORMAL, ACTIONS(KEY_O));
     profile.r4 = Button_(PIN_R4, HOLD_OVERLAP, ACTIONS(KEY_X), ACTIONS(KEY_P));
 
     profile.rotary = Rotary_(NULL, ACTIONS(MOUSE_SCROLL_UP), ACTIONS(MOUSE_SCROLL_DOWN));
